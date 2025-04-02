@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biochemistry Flashcards | GitHub</title>
+    <meta name="description" content="Interactive biochemistry flashcards with flip animation">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Biochemistry Flashcards</h1>
+            <div class="progress-indicator">
+                <span id="current-card">1</span>/<span id="total-cards">0</span>
+            </div>
+        </header>
+
+        <main class="flashcard-view">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <div class="card-content" id="question"></div>
+                        <div class="instruction">Click or press Space to flip</div>
+                    </div>
+                    <div class="flashcard-back">
+                        <div class="card-content" id="answer"></div>
+                        <div class="instruction">Click to return</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="navigation-controls">
+            <button id="prev-btn" class="nav-btn" aria-label="Previous card">← Prev</button>
+            <button id="shuffle-btn" class="nav-btn" aria-label="Shuffle cards">Shuffle 🔀</button>
+            <button id="next-btn" class="nav-btn" aria-label="Next card">Next →</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
